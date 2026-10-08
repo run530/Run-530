@@ -1,0 +1,44 @@
+STRAVA SETUP (about 30 minutes, easiest on a computer)
+
+BEFORE YOU START
+Strava's developer docs say a Strava subscription is required to create an API app.
+If you don't have one, skip this guide. Importing Garmin files into the app still works.
+Strava runs sync from your Garmin automatically, so that part is already done.
+
+STEP 1: CREATE THE WORKER (free Cloudflare account)
+1. Sign up at dash.cloudflare.com.
+2. Go to Workers & Pages > Create > Create Worker. Name it run-plan-strava and Deploy.
+3. Click Edit code, delete everything, paste in the contents of strava-worker.js, then Deploy.
+4. Copy your Worker address (ends in .workers.dev). You'll need it in Step 4.
+
+STEP 2: CREATE THE STRAVA APP
+1. Go to strava.com/settings/api and create an app.
+2. Website: your app address (https://YOURNAME.github.io/REPO-NAME/).
+3. Authorization Callback Domain: YOURNAME.github.io (just the domain, no https:// and no path).
+4. Copy the Client ID and the Client Secret.
+
+STEP 3: ADD THE KEYS TO THE WORKER
+In Cloudflare, open your Worker > Settings > Variables and Secrets. Add:
+- STRAVA_CLIENT_ID = your Client ID (Text)
+- STRAVA_CLIENT_SECRET = your Client Secret (Secret)
+- ALLOWED_ORIGIN = https://YOURNAME.github.io (Text, recommended)
+Then Deploy.
+
+STEP 4: UPDATE THE APP AND CONNECT
+1. In your GitHub repository, upload the new index.html and sw.js over the old ones.
+2. Close and reopen the app (it may take two opens to update).
+3. Progress > Strava: paste the Worker address and Client ID, tap Connect Strava, then Authorize.
+4. You return to the app and it syncs.
+
+HOW IT WORKS
+- Only Strava activities of type Run are used. Rides and soccer are ignored.
+- Each run fills the planned run on the same day, or a day either side if it's unfilled.
+  If a run lands on the wrong planned run, move it in the Calendar and sync again.
+- Distance, moving time and average HR are filled in and the run is ticked.
+- Runs you entered by hand or imported from a file are never overwritten.
+- If you untick a Strava run, it stays unticked and won't re-sync.
+- Never share your Client Secret. It only lives in Cloudflare.
+
+IF IT DOESN'T WORK
+- "redirect_uri invalid" from Strava: check the Callback Domain in Step 2.
+- "Connect failed": check the Worker address and that the variables in Step 3 are saved.
