@@ -88,6 +88,44 @@ h1{font-size:26px;margin:4px 0 8px}h2{font-size:14px;color:var(--tx);text-transf
 .stx{border-radius:16px;padding:14px 16px;margin:10px 0 4px;color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.12)}.stx b{font-size:20px;display:block;margin-bottom:4px}.stx div{font-size:14px;opacity:.95;margin-top:2px}
 .st-g{background:linear-gradient(135deg,#0b7a5a,#16a34a)}.st-a{background:linear-gradient(135deg,#b45309,#f59e0b)}.st-r{background:linear-gradient(135deg,#b42318,#ef4444)}
 .ab{margin-left:6px;padding:4px 10px;border:0;border-radius:8px;background:var(--ac);color:var(--bg);font:inherit;font-size:12px;font-weight:700}
+
+/* ---- professional polish ---- */
+:root{--bg:#f3f5f8;--ln:#e4e8ee;--tx:#0f172a;--mu:#64748b}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0e13;--card:#131a22;--ln:#222c38;--tx:#e9eef4;--mu:#8e9bad;--ac2:#10261f}}
+:root[data-theme="dark"]{--bg:#0a0e13;--card:#131a22;--ln:#222c38;--tx:#e9eef4;--mu:#8e9bad;--ac2:#10261f}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums;letter-spacing:-.005em}
+main{max-width:560px;padding:20px 16px 124px}
+h1{font-size:30px;font-weight:800;letter-spacing:-.035em;margin:6px 2px 6px}
+h2{font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--mu);margin:28px 4px 10px}
+.wk,.cg2,.gr div,.bd div,.sb,.sd{border:1px solid var(--ln);border-radius:18px;box-shadow:0 1px 2px rgba(15,23,42,.04),0 10px 28px -16px rgba(15,23,42,.18)}
+.v.on{animation:fi .28s ease}@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+button:active,.up:active{transform:scale(.97)}
+.hero{position:relative;overflow:hidden;border-radius:24px;padding:24px 22px 20px;background:radial-gradient(120% 140% at 100% 0%,rgba(47,111,228,.55),transparent 55%),linear-gradient(145deg,#053b2e,#0b7a5a 65%,#12a37f);box-shadow:0 18px 40px -18px rgba(5,59,46,.65)}
+.hero h1{font-size:34px;margin:4px 0 6px;color:#fff}.hero small{font-size:11px;font-weight:700;letter-spacing:.16em;opacity:.8}.hero>div:not(.ws){font-size:14px;font-weight:500;opacity:.9}
+.ws{display:flex;justify-content:space-between;margin-top:20px}.ws span{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:rgba(255,255,255,.55);background:rgba(255,255,255,.08)}
+.ws .p{color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.85)}.ws .d{background:#fff;color:#0b7a5a;font-size:16px}.ws .t{outline:2px solid rgba(255,255,255,.9);outline-offset:3px}
+.stx{border-radius:18px;padding:16px 18px;margin:14px 0 0}.stx b{font-size:19px;letter-spacing:-.02em}
+.run{border-left-width:3px}.row{padding:15px 16px;gap:14px;align-items:center}
+.row>input{-webkit-appearance:none;appearance:none;width:28px;height:28px;margin:0;border:2px solid #cbd5e1;border-radius:50%;background:var(--card);display:grid;place-items:center;flex:none;transition:.15s}
+.row>input:checked{background:var(--ac);border-color:var(--ac)}.row>input:checked::after{content:"✓";color:#fff;font-size:16px;font-weight:800;line-height:1}
+.rb b{font-size:16px;font-weight:700;letter-spacing:-.01em}.ty{font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:2px 8px;margin-left:8px}
+.sm{font-size:14px;color:var(--tx);opacity:.75;margin-top:2px}.dt{font-size:12px;color:var(--mu);margin-top:2px}
+.wh{padding:12px 16px;font-size:15px;letter-spacing:-.01em}
+.det{margin:0 12px 12px;padding:14px 16px;background:var(--bg);border-radius:14px}.det ol{padding-left:20px}
+.tip{background:none;border-left:3px solid var(--ac);border-radius:0;padding:2px 0 2px 12px;color:var(--mu)}
+.sx b{font-size:21px;letter-spacing:-.03em}
+.ring{padding:22px}.ring svg{width:176px;height:176px}
+.gr div{padding:14px 16px;border-top:3px solid var(--e)}.gr div:nth-child(2n){border-top-color:var(--l)}.gr div:nth-child(3n){border-top-color:var(--q)}.gr div:nth-child(n){background:var(--card)}
+.gr b{font-size:24px;font-weight:800;letter-spacing:-.03em}
+.cd{min-height:68px;padding:10px 14px}.dl{font-size:20px;font-weight:700;width:44px}.dl small{font-weight:700;letter-spacing:.08em}
+.ch{border-radius:12px;padding:8px 12px}.cd.today{background:var(--ac2)}
+#nav{left:12px;right:12px;bottom:calc(8px + env(safe-area-inset-bottom,0px));padding:6px;border:1px solid var(--ln);border-radius:28px;background:color-mix(in srgb,var(--card) 86%,transparent);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);box-shadow:0 14px 34px -12px rgba(15,23,42,.35)}
+#nav .on{color:var(--ac)}#nav .on b{background:var(--ac2)}
+.bar{height:10px}.hr{font-size:12px;color:var(--mu);margin:18px 4px}
+
+#nav .on b{display:block;width:max-content;margin:0 auto}
+.gr div,.gr div:nth-child(2n),.gr div:nth-child(3n){border-top:1px solid var(--ln)}
+.gr small{font-weight:500}
 </style></head><body><main>
 <div class="v" id="v-today"></div><div class="v" id="v-plan"></div><div class="v" id="v-cal"></div><div class="v" id="v-prog"></div>
 </main>
@@ -104,7 +142,7 @@ function mon(){var d=pd(S.start);d.setDate(d.getDate()-((d.getDay()+6)%7));retur
 function dateOf(k){if(S.moved[k])return S.moved[k];var a=k.split('-'),d=mon();d.setDate(d.getDate()+7*(a[0]-1)+[2,4,6][a[1]-1]);return iso(d)}
 function lab(s){var d=pd(s);return DN[d.getDay()]+' '+d.getDate()+' '+MN[d.getMonth()]}
 var IC={Easy:'🌿',Quality:'⚡',Long:'🛣️',Test:'🧪'};
-var PH=['🌱 Phase 1: Base (weeks 1–4)','🏗️ Phase 2: Build (weeks 5–10)','🔥 Phase 3: Sharpen (weeks 11–16)'];
+var PH=['Phase 1: Base (weeks 1–4)','Phase 2: Build (weeks 5–10)','Phase 3: Sharpen (weeks 11–16)'];
 function ph(w){return w<=4?0:w<=10?1:2}
 var EP=['6:30–6:45','6:15–6:30','6:00–6:15'],SP=['5:00–4:45','5:00–4:45','4:55–4:40'];
 var ES=[30,32,35,30,35,38,40,30,40,40,40,35,40,40,40,30],EN=[4,4,5,0,4,0,4,0,5,0,4,0,5,0,4,0];
@@ -196,7 +234,7 @@ function sync(){
   sv().last=Date.now();say('Synced '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})+'. '+n+' run'+(n==1?'':'s')+' matched to the plan.');render()
  }).catch(function(e){say('Sync failed: '+e.message)})}
 function stravaH(){
- var s=sv(),h='<h2>🔗 Strava</h2><div class="wk"><div class="row"><div class="rb">';
+ var s=sv(),h='<h2>Strava</h2><div class="wk"><div class="row"><div class="rb">';
  if(s.rt)h+='<div class="sm">Connected. Runs sync when you open the app.</div><div class="mn"><button id="sy">Sync now</button><button id="dc" style="background:var(--mu)">Disconnect</button></div>';
  else h+='<div class="sm">Paste the two values from the Strava setup guide, then connect.</div><div class="mn"><input id="swk" placeholder="Worker URL" style="width:100%" value="'+(s.wk||'')+'"><input id="scid" placeholder="Client ID" style="width:140px" value="'+(s.cid||'')+'"><button id="cn">Connect Strava</button></div>';
  return h+'<div class="sm" style="margin-top:6px">'+(s.msg||'')+'</div></div></div></div>'}
@@ -224,21 +262,28 @@ function status(){
  return{c:c,h:h,L:L,G:G}}
 function statusH(full){
  var s=status();
- return '<div class="stx st-'+s.c+'"><b>'+s.h+'</b>'+s.L.map(function(x){return'<div>'+x+'</div>'}).join('')+'</div>'+(full?'<h2>🧭 Suggestions</h2><div class="wk ins">'+s.G.map(function(x,i){return'<div style="'+(i?'':'border:0')+'">'+x+'</div>'}).join('')+'</div>':'')}
+ return '<div class="stx st-'+s.c+'"><b>'+s.h+'</b>'+s.L.map(function(x){return'<div>'+x+'</div>'}).join('')+'</div>'+(full?'<h2>Suggestions</h2><div class="wk ins">'+s.G.map(function(x,i){return'<div style="'+(i?'':'border:0')+'">'+x+'</div>'}).join('')+'</div>':'')}
 function plan(){
- var cnt=AK().filter(function(k){return S.done[k]}).length,h='<h1>Plan</h1><div class="wk"><div class="row"><div class="rb"><b>Goal: 5:30/km at 140–150 bpm</b><div class="sm">16 weeks, 3 runs a week. Easy runs at HR up to 150, one quality session and one long run.</div><div class="bar" style="margin-top:8px"><i style="width:'+(cnt/48*100)+'%"></i></div><div class="pc">'+cnt+' of 48 runs complete</div></div></div></div>'+statusH(1)+'<h2>💡 Insights</h2><div class="wk ins">'+insights().map(function(x,i){return'<div style="'+(i?'':'border:0')+'">💡 '+x+'</div>'}).join('')+'</div>',next=null;
+ var cnt=AK().filter(function(k){return S.done[k]}).length,h='<h1>Plan</h1><div class="wk"><div class="row"><div class="rb"><b>Goal: 5:30/km at 140–150 bpm</b><div class="sm">16 weeks, 3 runs a week. Easy runs at HR up to 150, one quality session and one long run.</div><div class="bar" style="margin-top:8px"><i style="width:'+(cnt/48*100)+'%"></i></div><div class="pc">'+cnt+' of 48 runs complete</div></div></div></div>'+statusH(1)+'<h2>Insights</h2><div class="wk ins">'+insights().map(function(x,i){return'<div style="'+(i?'':'border:0')+'">💡 '+x+'</div>'}).join('')+'</div>',next=null;
  for(var w=1;w<=16;w++){
   if(w==1||w==5||w==11)h+='<h2>'+PH[ph(w)]+'</h2>';
   var wd=0,rows='',km=0;
   for(var r=1;r<=3;r++){var k=w+'-'+r;if(S.done[k])wd++;else if(!next)next=k;if(S.stats[k])km+=S.stats[k].km||0;rows+=rowH(k,next==k)}
   h+='<div class="wk"><div class="wh"><span>Week '+w+'</span><span>'+(TEST[w]?'<span class="tag">LIGHT + TEST</span> ':'')+(km?km.toFixed(1)+' km · ':'')+wd+'/3</span></div>'+rows+'</div>'}
  return h+'<p class="hr">Easy = HR up to 150. Steady 155–165. Tempo 168–176. Hard 178–188. Paces in min/km. HR lags 5–8 min at the start of a run.</p>'}
+function wkStrip(){
+ var M=mon(),td=iso(new Date()),n=Math.floor((pd(td)-M)/6048e5),by={},h='',i;
+ if(n<0||n>15)return '';
+ AK().forEach(function(k){var d=dateOf(k);(by[d]=by[d]||[]).push(k)});
+ for(i=0;i<7;i++){var d=new Date(M);d.setDate(d.getDate()+7*n+i);var s=iso(d),ks=by[s]||[],dn=ks.length&&ks.every(function(k){return S.done[k]});
+  h+='<span class="'+(dn?'d':ks.length?'p':'')+(s==td?' t':'')+'">'+(dn?'✓':'MTWTFSS'[i])+'</span>'}
+ return '<div class="ws">'+h+'</div>'}
 function today(){
- var td=iso(new Date()),ks=AK().filter(function(k){return dateOf(k)==td}),hr=new Date().getHours(),wn=Math.floor((pd(td)-mon())/6048e5)+1,h='<div class="hero"><small>GOOD '+(hr<12?'MORNING ☀️':hr<18?'AFTERNOON 🌤️':'EVENING 🌙')+'</small><h1>'+lab(td)+'</h1><div>'+(wn<1?'Plan starts '+lab(S.start):wn>16?'Plan complete 🎉':'Week '+wn+' of 16 · '+PH[ph(wn)].split(' (')[0])+'</div></div>'+statusH(0);
+ var td=iso(new Date()),ks=AK().filter(function(k){return dateOf(k)==td}),hr=new Date().getHours(),wn=Math.floor((pd(td)-mon())/6048e5)+1,h='<div class="hero"><small>GOOD '+(hr<12?'MORNING ☀️':hr<18?'AFTERNOON 🌤️':'EVENING 🌙')+'</small><h1>'+lab(td)+'</h1><div>'+(wn<1?'Plan starts '+lab(S.start):wn>16?'Plan complete 🎉':'Week '+wn+' of 16 · '+PH[ph(wn)].split(' (')[0])+'</div>'+wkStrip()+'</div>'+statusH(0);
  if(ks.length)h+='<h2>Today\'s run</h2>'+ks.map(function(k){OPEN[k]=OPEN[k]!==false;return'<div class="wk">'+rowH(k)+'</div>'}).join('');
  else{var nx=AK().filter(function(k){return!S.done[k]&&dateOf(k)>td}).sort(function(a,b){return dateOf(a)<dateOf(b)?-1:1})[0];
   h+='<h2>Today</h2><div class="wk"><div class="row"><div class="rb"><b>😴 Rest day</b><div class="sm">'+(nx?'Next: Week '+nx.replace('-',' Run ')+', '+RN(nx).t+' ('+RN(nx).s+') on '+lab(dateOf(nx)):'No runs scheduled.')+'</div></div></div></div>'}
- return h+'<h2>🌦️ Weather</h2><div class="wk"><div class="row"><div class="rb sm" id="wxt">Loading…</div></div></div>'}
+ return h+'<h2>Weather</h2><div class="wk"><div class="row"><div class="rb sm" id="wxt">Loading…</div></div></div>'}
 var WXD=null;
 function wx(){var e=document.getElementById('wxt');if(!e)return;if(WXD){e.innerHTML=WXD;return}
  fetch('https://api.open-meteo.com/v1/forecast?latitude=-31.96&longitude=115.78&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum&timezone=auto&forecast_days=3').then(function(r){return r.json()}).then(function(j){
@@ -270,9 +315,9 @@ function prog(){
  var g=agg(),s={n:g.n,km:g.km,lg:g.lg,fw:0,ts:false,p1:true};
  for(var w=1;w<=16;w++){var c=[1,2,3].filter(function(r){return S.done[w+'-'+r]}).length;if(c==3)s.fw++;if(w<=4&&c<3)s.p1=false;if(TEST[w]&&S.done[w+'-2'])s.ts=true}
  var sc=score(s,g),C=326.7,pa=g.km&&g.min?Math.round(g.min*60/g.km):0;
- return '<h1>Progress</h1><div class="cg2 ring"><svg viewBox="0 0 120 120"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34c797"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs><circle cx="60" cy="60" r="52" fill="none" stroke="var(--ln)" stroke-width="10"/><circle cx="60" cy="60" r="52" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="round" stroke-dasharray="'+C+'" stroke-dashoffset="'+(C*(1-sc/100)).toFixed(1)+'" transform="rotate(-90 60 60)"/><text x="60" y="64" text-anchor="middle">'+sc+'</text><text x="60" y="80" text-anchor="middle" class="small" style="font-size:10px;fill:var(--mu);font-weight:400">RUNNING SCORE</text></svg></div>'+
- '<h2>📊 All-time stats</h2><div class="gr"><div><b>'+g.n+'</b><small>🏃 Runs completed</small></div><div><b>'+g.km.toFixed(1)+' km</b><small>📏 Total distance</small></div><div><b>'+hm(g.min)+'</b><small>⏱️ Total time</small></div><div><b>'+g.lg.toFixed(1)+' km</b><small>🏔️ Longest run</small></div><div><b>'+(pa?Math.floor(pa/60)+':'+pad(pa%60)+'/km':'–')+'</b><small>⚡ Average pace</small></div><div><b>'+(g.hs.length?Math.round(mean(g.hs))+' bpm':'–')+'</b><small>❤️ Average HR</small></div></div>'+
- '<h2>🏅 Badges · '+BD.filter(function(b){return b[2](s)}).length+' of '+BD.length+'</h2><div class="bd">'+BD.map(function(b){return'<div class="'+(b[2](s)?'got':'')+'"><span>'+b[0]+'</span>'+b[1]+'</div>'}).join('')+'</div>'+stravaH()+'<div class="gr" style="margin-top:14px"><button class="rs" id="ex" style="margin:0">⬇️ Back up data</button><label class="rs" style="margin:0;text-align:center;position:relative">⬆️ Restore backup<input type="file" id="im" style="position:absolute;opacity:0;width:1px;height:1px"></label></div><button class="rs" id="rs">Reset all data</button>'}
+ return '<h1>Progress</h1><div class="cg2 ring"><svg viewBox="0 0 120 120"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34c797"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs><circle cx="60" cy="60" r="52" fill="none" stroke="var(--ln)" stroke-width="10"/><circle cx="60" cy="60" r="52" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="round" stroke-dasharray="'+C+'" stroke-dashoffset="'+(C*(1-sc/100)).toFixed(1)+'" transform="rotate(-90 60 60)"/><text x="60" y="64" text-anchor="middle">'+sc+'</text><text x="60" y="80" text-anchor="middle" class="small" style="font-size:7px;letter-spacing:.16em;fill:var(--mu);font-weight:600">RUNNING SCORE</text></svg></div>'+
+ '<h2>All-time stats</h2><div class="gr"><div><b>'+g.n+'</b><small>🏃 Runs completed</small></div><div><b>'+g.km.toFixed(1)+' km</b><small>📏 Total distance</small></div><div><b>'+hm(g.min)+'</b><small>⏱️ Total time</small></div><div><b>'+g.lg.toFixed(1)+' km</b><small>🏔️ Longest run</small></div><div><b>'+(pa?Math.floor(pa/60)+':'+pad(pa%60)+'/km':'–')+'</b><small>⚡ Average pace</small></div><div><b>'+(g.hs.length?Math.round(mean(g.hs))+' bpm':'–')+'</b><small>❤️ Average HR</small></div></div>'+
+ '<h2>Badges · '+BD.filter(function(b){return b[2](s)}).length+' of '+BD.length+'</h2><div class="bd">'+BD.map(function(b){return'<div class="'+(b[2](s)?'got':'')+'"><span>'+b[0]+'</span>'+b[1]+'</div>'}).join('')+'</div>'+stravaH()+'<div class="gr" style="margin-top:14px"><button class="rs" id="ex" style="margin:0">⬇️ Back up data</button><label class="rs" style="margin:0;text-align:center;position:relative">⬆️ Restore backup<input type="file" id="im" style="position:absolute;opacity:0;width:1px;height:1px"></label></div><button class="rs" id="rs">Reset all data</button>'}
 function render(){
  var H={today:today,plan:plan,cal:cal,prog:prog};
  V.forEach(function(v){var e=document.getElementById('v-'+v);e.className='v'+(v==view?' on':'');if(v==view)e.innerHTML=H[v]()});
